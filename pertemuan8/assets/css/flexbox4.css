@@ -1,0 +1,81 @@
+/* body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header, article, nav, aside, footer{
+    padding: 1rem;
+}
+
+nav{
+    background-color: pink;
+}
+
+div{
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer{
+    background-color: khaki;
+
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+article{
+    
+}
+
+aside{
+    background-color: #03Dac5;
+} */
+
+/* Reset margin dan padding */
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+}
+
+header, article, nav, aside, footer{
+    padding: 1rem;
+}
+
+nav{
+    background: pink;
+    width: 15vw;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header, footer{
+    height: 15vh;
+    background: khaki;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+article{
+    flex-grow: 1;
+}
+
+aside{
+    background-color: #03Dac5;
+    width: 15rem;
+}
+

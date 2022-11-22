@@ -1,0 +1,36 @@
+/* Reset margin dan padding */
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, article, nav, aside, footer{
+    padding: 1rem;
+}
+
+header, footer{
+    height: 20vh;
+    background: khaki;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+
+article{
+    flex-grow: 1;
+}
+
+aside{
+    background-color: pink;
+    flex: 0 0 20vw;
+}
+
+nav{
+    background: #03Dac5;
+    flex: 0 0 20vw;
+}
