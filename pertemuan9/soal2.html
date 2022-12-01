@@ -13,23 +13,21 @@
 
     <label for="nilaiRupiah">Masukan nilai rupiah = </label>
     <input type="number" id="nilaiRupiah" onchange="hitungRupiah()">
-    <p>Hasil nilai dollar = <span id="hasildollar">0</span>$</p>
 
-    <br><hr><br>
+    <br><br>
 
     <label for="nilaiDollar">Masukan nilai dollar = </label>
     <input type="number" id="nilaiDollar" onchange="hitungDollar()">
-    <p>Hasil nilai rupiah = Rp. <span id="hasilrupiah">0</span></p>
 
     <script>
         function hitungRupiah(){
             let hasildollar = document.getElementById('nilaiRupiah').value / 14650
-            document.getElementById('hasildollar').innerHTML = hasildollar
+            document.getElementById('nilaiDollar').value = hasildollar
         }
 
         function hitungDollar(){
             let hasilrupiah = document.getElementById('nilaiDollar').value * 14650
-            document.getElementById('hasilrupiah').innerHTML = hasilrupiah            
+            document.getElementById('nilaiRupiah').value = hasilrupiah            
         }
     </script>
 </body>
