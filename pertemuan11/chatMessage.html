@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Message</title>
+</head>
+<body>
+    <fieldset style="width: 40%; padding: 0;">
+    <div id="pesan"></div>
+
+    <div style="background-color: rgb(202, 201, 201);">
+        <input type="text" style="width: 90%;" id="input" onfocus="this.value=''">
+        <input type="submit" value="Kirim" onclick="chat()">
+    </div>
+    </fieldset>
+</body>
+<script>
+    function chat(){
+        let input = document.getElementById('input').value;
+        let span = document.createElement('span');
+        let br = document.createElement('br');
+        let hr = document.createElement('hr');
+        let inputan = document.createTextNode(input);
+
+        span.append(inputan);
+        let tampilan = document.getElementById('pesan');
+        tampilan.append('Kamu: ')
+        tampilan.append(span);
+        tampilan.append(br);
+        tampilan.append(hr);
+    }
+</script>
+</html>
